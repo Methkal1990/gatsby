@@ -1,0 +1,135 @@
+.post {
+  &-outer {
+    margin: 2rem 0;
+  }
+  &-image {
+    img {
+      width: 100%;
+    }
+  }
+  &-body {
+    display: flex;
+    padding: 15px 10px;
+
+    &__dateholder {
+      flex: 0 0 14%;
+      height: max-content;
+      color: var(--color-secondary);
+      letter-spacing: 4px;
+
+      text-align: center;
+
+      div {
+        border-bottom: solid 3px var(--color-secondary);
+        width: fit-content;
+        padding-bottom: 0.5rem;
+        margin: 0 0.8rem;
+        font-size: 0.625rem;
+      }
+
+      span {
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: block;
+      }
+    }
+    &__content {
+      width: max-content;
+    }
+  }
+}
+
+.post {
+  &-head {
+    &__meta {
+      padding: 5px;
+      &-item {
+        padding: 0 0.75rem;
+        display: flex;
+        align-items: center;
+
+        span {
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+  &-text {
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+    border-top: solid 2px #333;
+  }
+
+  &-footer-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1.5px rgba(51, 51, 51, 0.1);
+    border-top: solid 1.5px rgba(51, 51, 51, 0.1);
+    padding: 1rem 0;
+
+    .soc {
+      color: var(--color-grey-dark);
+      // color: var(--color-grey-light);
+      padding: 0.5rem;
+      text-align: center;
+      border-radius: 5px;
+
+      i {
+        width: 1.5rem;
+        height: 1rem;
+        line-height: 0.5rem;
+      }
+    }
+
+    a:hover {
+      color: #f4f4f4;
+    }
+
+    a.facebook:hover {
+      background-color: #3b5998;
+    }
+
+    a.twitter:hover {
+      background-color: #00aced;
+    }
+
+    a.google:hover {
+      background-color: #ff2515;
+    }
+    .read-more {
+      position: relative;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .post {
+    &-body {
+      &__dateholder {
+        display: none;
+      }
+    }
+    &-footer-meta {
+      .soc {
+        padding: 0.4rem;
+        color: var(--color-grey-dark);
+        background-color: #fff;
+
+        i {
+          width: 2rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .post {
+    &-footer-meta {
+      &-btn {
+        display: none;
+      }
+    }
+  }
+}

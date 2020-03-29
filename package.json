@@ -1,0 +1,44 @@
+{
+  "name": "gatsby-education-ui",
+  "private": true,
+  "description": "",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "gatsby": "^2.20.8",
+    "gatsby-plugin-intl": "^0.3.3",
+    "gatsby-plugin-react-helmet": "^3.1.23",
+    "gatsby-plugin-sass": "^2.1.29",
+    "gatsby-source-filesystem": "^2.1.48",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.17",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-icomoon": "^2.0.3",
+    "react-intl": "^4.1.1",
+    "react-multi-carousel": "^2.5.2",
+    "recompose": "^0.30.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.1",
+    "prettier": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  }
+}

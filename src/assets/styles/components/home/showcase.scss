@@ -1,0 +1,49 @@
+.hero {
+  background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 70%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("../../assets/img/hero-img.jpg");
+  background-size: cover;
+
+  width: 100%;
+  height: 90vh;
+  // align the text in the other direction for arabic support
+  text-align: start;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  color: var(--color-grey-light);
+}
+
+.primary-heading {
+  // font-size: 3.25rem;
+  width: 20rem;
+}
+
+.primary-sub-heading {
+  padding: 15px 0;
+  font-size: 0.9;
+  color: var(--color-grey-light);
+  width: 27rem;
+}
+
+@media screen and (max-width: 576px) {
+  .hero-text {
+    padding-left: 30px;
+  }
+  .primary-sub-heading {
+    width: 18rem;
+  }
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  padding: 10px 25px;
+}
